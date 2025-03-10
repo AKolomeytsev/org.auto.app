@@ -10,13 +10,13 @@ import org.mapstruct.factory.Mappers;
 public interface IMapperWheelArr {
     IMapperWheelArr INSTANS = Mappers.getMapper(IMapperWheelArr.class);
 
-    /*@Mapping(source = "id",target = "id")
+    @Mapping(source = "id",target = "id")
     @Mapping(source = "name", target = "name")
-    @Mapping(source = "cntWheel",target = "cntWheel")*/
+    @Mapping(source = "cntWheel",target = "cntWheel")
     SpWheelArrDTO toDto(SpWheelArr spWheelArr);
 
-    /*@Mapping(source = "id",target = "id")
+    @Mapping(source = "id",target = "id")
     @Mapping(source = "name", target = "name")
-    @Mapping(source = "cntWheel",target = "cntWheel")*/
+    @Mapping(source = "cntWheel",target = "cntWheel")
     SpWheelArr toEntity(SpWheelArrDTO spWheelArrDTO);
 }
